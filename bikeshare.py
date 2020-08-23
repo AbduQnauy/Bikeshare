@@ -262,6 +262,7 @@ def print_raw_data(df):
         if response.lower() not in ['yes', 'y']:
             break
         print(df.head())
+#         reassign new data frame (start from 5th row to the last row including all columns) which is sliced from the original data frame
         df = df.iloc[5:, ]
 
 
